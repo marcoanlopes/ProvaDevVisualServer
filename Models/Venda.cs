@@ -10,6 +10,8 @@ namespace API.Models
         public string Cliente { get; set; }
         public List<ItemVenda> Itens { get; set; }
         public DateTime CriadoEm { get; set; }
-        
+        public int FormaPagamentoId {get; set;}
+        public FormaPagamento FormaPagamento {get; set;}
+
     }
 }
