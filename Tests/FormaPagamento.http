@@ -1,0 +1,27 @@
+POST https://localhost:5001/api/pagamento/create
+Content-Type: application/json
+
+{
+    "tipoPagamento" : "Dinheiro",
+    "descricao" : "À vista"
+}
+
+### Criar outra forma de pagamento
+POST https://localhost:5001/api/pagamento/create
+Content-Type: application/json
+
+{
+    "tipoPagamento" : "PIX",
+    "descricao" : "À vista"
+}
+###
+POST https://localhost:5001/api/pagamento/create
+Content-Type: application/json
+
+{
+    "tipoPagamento" : "Cartão",
+    "descricao" : "À vista"
+}
+### 
+GET https://localhost:5001/api/pagamento/list
+
