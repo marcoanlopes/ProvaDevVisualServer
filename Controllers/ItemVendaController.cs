@@ -32,7 +32,7 @@ namespace API.Controllers
             return Created("", item);
         }
 
-        // GET: api/item/getbycartid/XXXXX-XXXX-XXXXXXXXXXX
+        // GET: api/item/getbycartid/
         [HttpGet]
         [Route("getbycartid/{cartid}")]
         public IActionResult GetByCartId([FromRoute] string cartId)
