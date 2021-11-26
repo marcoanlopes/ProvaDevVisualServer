@@ -1,2 +1,25 @@
 ### Listar vendas
 GET https://localhost:5001/api/venda/list
+
+### Cadastrar venda 
+POST https://localhost:5001/api/venda/create
+Content-Type: application/json
+
+{
+    "Cliente" : "teste para criação da venda",
+    "FormaPagamentoId" : 1,
+    "Itens" : [
+        {
+            "ProdutoId" : 1,
+            "CarrinhoId" : "",
+            "Quantidade" : 1,
+            "Preco" : 3
+        },
+        {
+            "ProdutoId" : 1,
+            "CarrinhoId" : "",
+            "Quantidade" : 5,
+            "Preco" : 4
+        }
+    ]
+}
