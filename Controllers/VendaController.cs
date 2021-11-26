@@ -26,7 +26,7 @@ namespace API.Controllers
             .Include(p => p.FormaPagamento)
             .Include(p => p.Itens)     
             .ThenInclude(i => i.Produto)
-            .ThenInclude(p => p.Categoria)
+            .ThenInclude(q => q.Categoria)
             .ToList();
             return Ok(venda);
         }
